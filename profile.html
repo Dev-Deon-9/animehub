@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AnimeHub - Gideon</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         TOP NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>👾</span>
+            <h2>Anime<span>Hub</span></h2>
+        </div>
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="text" placeholder="Search AnimeHub...">
+        </div>
+
+        <nav class="top-nav">
+            <a href="index.html">🏠 <span>Home</span></a>
+            <a href="anime.html">📺 <span>Anime</span></a>
+        </nav>
+
+        <div class="nav-right">
+
+            <a href="#" class="notification">
+                🔔
+                <small>3</small>
+            </a>
+
+            <div class="nav-profile">
+                <span class="small-avatar">G</span>
+                <span>Gideon</span>
+                <span>⌄</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN LAYOUT
+    ========================== -->
+
+    <main class="main-container profile-layout">
+
+        <!-- LEFT SIDEBAR -->
+
+        <aside class="left-sidebar">
+
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar">G</div>
+
+                <div>
+                    <h3>Gideon</h3>
+                    <p>@dev_deon</p>
+                </div>
+
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a href="index.html">
+                    <span>🏠</span>
+                    Home
+                </a>
+
+                <a href="anime.html">
+                    <span>📺</span>
+                    Anime
+                </a>
+
+                <a href="#">
+                    <span>👥</span>
+                    Groups
+                </a>
+
+                <a href="#">
+                    <span>🔥</span>
+                    Trending
+                </a>
+
+                <a href="#">
+                    <span>🏆</span>
+                    Rankings
+                </a>
+
+                <a href="#">
+                    <span>✉️</span>
+                    Messages
+                    <small>5</small>
+                </a>
+
+                <a href="#">
+                    <span>🔔</span>
+                    Notifications
+                    <small>3</small>
+                </a>
+
+                <a href="#">
+                    <span>⚙️</span>
+                    Settings
+                </a>
+
+                <a href="#">
+                    <span>🚪</span>
+                    Logout
+                </a>
+
+            </nav>
+
+            <div class="premium-box">
+
+                <div class="premium-title">
+                    <span>👑</span>
+                    <h3>AnimeHub Premium</h3>
+                </div>
+
+                <p>
+                    Unlock more profile features and customize
+                    your AnimeHub experience.
+                </p>
+
+                <button>Upgrade</button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- PROFILE CONTENT -->
+
+        <section class="feed profile-feed">
+
+            <!-- PROFILE HEADER -->
+
+            <section class="profile-header-card">
+
+                <div class="profile-cover">
+
+                    <div class="cover-glow"></div>
+
+                    <div class="cover-art">
+                        <span>☠</span>
+                    </div>
+
+                    <button class="cover-edit" title="Change cover">
+                        ✎
+                    </button>
+
+                </div>
+
+                <div class="profile-main">
+
+                    <div class="profile-avatar-large">
+                        G
+                    </div>
+
+                    <div class="profile-identity">
+
+                        <div class="profile-name-row">
+
+                            <div>
+                                <h1>Gideon</h1>
+                                <p>@dev_deon</p>
+                            </div>
+
+                            <button class="edit-profile-btn">
+                                ✎ <span>Edit Profile</span>
+                            </button>
+
+                        </div>
+
+                        <div class="profile-stats">
+
+                            <div>
+                                <strong>24</strong>
+                                <span>Posts</span>
+                            </div>
+
+                            <div>
+                                <strong>1.2K</strong>
+                                <span>Followers</span>
+                            </div>
+
+                            <div>
+                                <strong>320</strong>
+                                <span>Following</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <nav class="profile-tabs">
+
+                    <a href="#" class="active">Posts</a>
+                    <a href="#">About</a>
+                    <a href="#">Favorite Anime</a>
+                    <a href="#">Photos</a>
+                    <a href="#" class="more-tab">More <span>⌄</span></a>
+
+                </nav>
+
+            </section>
+
+
+            <!-- MOBILE ABOUT / FAVORITES -->
+
+            <div class="mobile-profile-info">
+
+                <section class="profile-info-card">
+
+                    <div class="profile-section-heading">
+                        <h2>About</h2>
+                        <button>✎</button>
+                    </div>
+
+                    <p>🎌 Anime fan</p>
+                    <p>💻 Developer</p>
+
+                </section>
+
+                <section class="profile-info-card">
+
+                    <div class="profile-section-heading">
+                        <h2>Favorite Anime</h2>
+                        <a href="#">View All →</a>
+                    </div>
+
+                    <div class="favorite-list">
+
+                        <div class="favorite-item">
+                            <div class="favorite-cover one-piece-cover">☠</div>
+                            <span>One Piece</span>
+                        </div>
+
+                        <div class="favorite-item">
+                            <div class="favorite-cover jjk-cover">呪</div>
+                            <span>Jujutsu Kaisen</span>
+                        </div>
+
+                        <div class="favorite-item">
+                            <div class="favorite-cover naruto-cover">忍</div>
+                            <span>Naruto</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- CREATE POST -->
+
+            <section class="create-post">
+
+                <div class="create-post-top">
+
+                    <div class="post-avatar">G</div>
+
+                    <input
+                        type="text"
+                        placeholder="What's on your mind, Gideon?"
+                    >
+
+                </div>
+
+                <div class="post-options">
+
+                    <button>📷 Photo</button>
+                    <button>🎌 Anime</button>
+                    <button>📊 Poll</button>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT POSTS -->
+
+            <div class="profile-content-heading">
+                <h2>Recent Posts</h2>
+            </div>
+
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="post-avatar">G</div>
+
+                    <div class="post-user">
+                        <h3>Gideon</h3>
+                        <p>@dev_deon · 2h</p>
+                    </div>
+
+                    <button class="more-button">•••</button>
+
+                </div>
+
+                <div class="post-content">
+
+                    <p>
+                        Just finished another episode of One Piece 🔥<br>
+                        The animation this week was crazy!
+                    </p>
+
+                    <div class="post-image one-piece">
+                        <span>☠</span>
+                        <div>ONE PIECE</div>
+                    </div>
+
+                </div>
+
+                <div class="post-stats">
+                    <span>❤️ 248</span>
+                    <span>💬 42</span>
+                    <span>↗ Share</span>
+                </div>
+
+                <div class="post-actions">
+                    <button>♡ <span>Like</span></button>
+                    <button>💬 <span>Comment</span></button>
+                    <button>↗ <span>Share</span></button>
+                </div>
+
+            </article>
+
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="post-avatar">G</div>
+
+                    <div class="post-user">
+                        <h3>Gideon</h3>
+                        <p>@dev_deon · 5h</p>
+                    </div>
+
+                    <button class="more-button">•••</button>
+
+                </div>
+
+                <div class="post-content">
+
+                    <p>
+                        Who do you think is the strongest character
+                        in Jujutsu Kaisen? 👀<br>
+                        Gojo or Sukuna?
+                    </p>
+
+                    <div class="post-image jjk">
+                        <div>GOJO VS SUKUNA</div>
+                    </div>
+
+                </div>
+
+                <div class="post-stats">
+                    <span>❤️ 186</span>
+                    <span>💬 79</span>
+                    <span>↗ Share</span>
+                </div>
+
+                <div class="post-actions">
+                    <button>♡ <span>Like</span></button>
+                    <button>💬 <span>Comment</span></button>
+                    <button>↗ <span>Share</span></button>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- RIGHT SIDEBAR -->
+
+        <aside class="right-sidebar profile-right-sidebar">
+
+            <!-- ABOUT -->
+
+            <section class="right-card">
+
+                <div class="right-card-heading">
+                    <h2>About</h2>
+                    <a href="#">✎</a>
+                </div>
+
+                <div class="about-item">
+                    <span>🎌</span>
+                    <p>Anime fan</p>
+                </div>
+
+                <div class="about-item">
+                    <span>💻</span>
+                    <p>Developer</p>
+                </div>
+
+            </section>
+
+
+            <!-- FAVORITE ANIME -->
+
+            <section class="right-card">
+
+                <div class="right-card-heading">
+                    <h2>Favorite Anime</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+                <div class="favorite-grid">
+
+                    <div class="favorite-card">
+                        <div class="favorite-cover one-piece-cover">☠</div>
+                        <p>One Piece</p>
+                    </div>
+
+                    <div class="favorite-card">
+                        <div class="favorite-cover jjk-cover">呪</div>
+                        <p>Jujutsu Kaisen</p>
+                    </div>
+
+                    <div class="favorite-card">
+                        <div class="favorite-cover naruto-cover">忍</div>
+                        <p>Naruto</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT ACTIVITY -->
+
+            <section class="right-card">
+
+                <div class="right-card-heading">
+                    <h2>Recent Activity</h2>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon">👥</div>
+                    <div>
+                        <p>Gideon started following AnimeFan</p>
+                        <small>2h ago</small>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon">💬</div>
+                    <div>
+                        <p>Gideon commented on One Piece episode</p>
+                        <small>4h ago</small>
+                    </div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon">❤️</div>
+                    <div>
+                        <p>Gideon liked your post</p>
+                        <small>5h ago</small>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- PEOPLE YOU MAY KNOW -->
+
+            <section class="right-card">
+
+                <div class="right-card-heading">
+                    <h2>People You May Know</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+                <div class="follow-user">
+                    <div class="user-avatar purple">J</div>
+                    <div class="follow-info">
+                        <h3>JujutsuFan</h3>
+                        <p>@jjkfan</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+                <div class="follow-user">
+                    <div class="user-avatar orange">N</div>
+                    <div class="follow-info">
+                        <h3>NarutoFan</h3>
+                        <p>@narutofan</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+                <div class="follow-user">
+                    <div class="user-avatar pink">A</div>
+                    <div class="follow-info">
+                        <h3>AnimeGirl</h3>
+                        <p>@animegirl</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+                <div class="follow-user">
+                    <div class="user-avatar green">Z</div>
+                    <div class="follow-info">
+                        <h3>ZoroKun</h3>
+                        <p>@zorokun</p>
+                    </div>
+                    <button>Follow</button>
+                </div>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+
+    <!-- MOBILE BOTTOM NAV -->
+
+    <nav class="mobile-nav">
+
+        <a href="index.html">
+            🏠
+            <small>Home</small>
+        </a>
+
+        <a href="anime.html">
+            📺
+            <small>Anime</small>
+        </a>
+
+        <a href="#" class="create-button">
+            +
+            <small>Create</small>
+        </a>
+
+        <a href="#">
+            👥
+            <small>Groups</small>
+        </a>
+
+        <a href="profile.html" class="active">
+            👤
+            <small>Profile</small>
+        </a>
+
+    </nav>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
