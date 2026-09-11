@@ -1,0 +1,617 @@
+/* =========================================
+   ANIMEHUB MESSAGES
+========================================= */
+
+.messages-page {
+    max-width: 1250px;
+    height: calc(100vh - 75px);
+    margin: 0 auto;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: 360px minmax(450px, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================================
+   PANELS
+========================================= */
+
+.conversation-panel,
+.chat-panel {
+    background: #111c31;
+    border: 1px solid #293958;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONVERSATION HEADER
+========================================= */
+
+.conversation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 20px;
+
+    border-bottom: 1px solid #263653;
+}
+
+.conversation-header h1 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.conversation-header span {
+    color: #7f8ba7;
+    font-size: 13px;
+}
+
+.new-message-btn {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #6755ff,
+        #8b4dff
+    );
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.message-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 15px;
+
+    padding: 0 13px;
+
+    height: 42px;
+
+    background: #18233a;
+    border: 1px solid #2b3b5a;
+    border-radius: 9px;
+}
+
+.message-search span {
+    color: #8491ad;
+    font-size: 20px;
+}
+
+.message-search input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+}
+
+.message-search input::placeholder {
+    color: #687691;
+}
+
+
+/* =========================================
+   CONVERSATIONS
+========================================= */
+
+.conversation-list {
+    overflow-y: auto;
+    max-height: calc(100vh - 190px);
+}
+
+.conversation {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid #1e2c45;
+
+    text-align: left;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+.conversation:hover {
+    background: #17243c;
+}
+
+.conversation.active {
+    background: #1b2946;
+}
+
+
+/* =========================================
+   AVATARS
+========================================= */
+
+.message-avatar {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.message-avatar.pink {
+    background: linear-gradient(
+        135deg,
+        #ff6495,
+        #d63d9b
+    );
+}
+
+.message-avatar.blue {
+    background: linear-gradient(
+        135deg,
+        #4569e8,
+        #7048d8
+    );
+}
+
+.message-avatar.purple {
+    background: linear-gradient(
+        135deg,
+        #6d4cff,
+        #a44dff
+    );
+}
+
+.message-avatar.green {
+    background: linear-gradient(
+        135deg,
+        #35a765,
+        #91c936
+    );
+}
+
+.message-avatar.orange {
+    background: linear-gradient(
+        135deg,
+        #f08b36,
+        #e84d4d
+    );
+}
+
+
+/* =========================================
+   CONVERSATION INFORMATION
+========================================= */
+
+.conversation-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.conversation-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5px;
+}
+
+.conversation-name strong {
+    font-size: 14px;
+}
+
+.conversation-name span {
+    color: #65738f;
+    font-size: 11px;
+}
+
+.conversation-info p {
+    margin: 0;
+
+    color: #8794ae;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   UNREAD
+========================================= */
+
+.unread {
+    width: 21px;
+    height: 21px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #6955ff;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CHAT PANEL
+========================================= */
+
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   CHAT HEADER
+========================================= */
+
+.chat-header {
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    border-bottom: 1px solid #263653;
+}
+
+.back-btn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+}
+
+.chat-user {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    flex: 1;
+}
+
+.chat-user strong {
+    display: block;
+
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+.chat-user span {
+    display: block;
+
+    color: #8491ad;
+
+    font-size: 12px;
+}
+
+.chat-user small {
+    display: block;
+
+    color: #49c77a;
+
+    font-size: 10px;
+
+    margin-top: 2px;
+}
+
+.chat-more {
+    border: none;
+    background: none;
+
+    color: #9aa7c1;
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   CHAT BODY
+========================================= */
+
+.chat-body {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 25px;
+}
+
+.message-date {
+    text-align: center;
+
+    color: #687691;
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CHAT MESSAGES
+========================================= */
+
+.chat-message {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 70%;
+
+    margin-bottom: 18px;
+}
+
+.chat-message.received {
+    align-items: flex-start;
+}
+
+.chat-message.sent {
+    align-items: flex-end;
+
+    margin-left: auto;
+}
+
+.message-bubble {
+    padding: 11px 15px;
+
+    border-radius: 14px;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+}
+
+.received .message-bubble {
+    background: #1b2944;
+
+    border-bottom-left-radius: 4px;
+
+    color: #e5e9f6;
+}
+
+.sent .message-bubble {
+    background: linear-gradient(
+        135deg,
+        #6253e8,
+        #7a4ff2
+    );
+
+    border-bottom-right-radius: 4px;
+
+    color: white;
+}
+
+.chat-message > span {
+    color: #64718b;
+
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   MESSAGE INPUT
+========================================= */
+
+.message-input-area {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 15px 18px;
+
+    border-top: 1px solid #263653;
+}
+
+.message-input-area input {
+    flex: 1;
+
+    height: 44px;
+
+    padding: 0 15px;
+
+    background: #18233a;
+
+    border: 1px solid #304160;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    color: white;
+}
+
+.message-input-area input:focus {
+    border-color: #6955ff;
+}
+
+.message-input-area input::placeholder {
+    color: #6d7891;
+}
+
+.input-tool {
+    background: none;
+
+    border: none;
+
+    color: #8996b2;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+.send-btn {
+    width: 43px;
+    height: 43px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #6555ff,
+        #874fff
+    );
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .messages-page {
+        display: block;
+
+        height: calc(100vh - 75px);
+
+        padding: 10px;
+    }
+
+    .conversation-panel {
+        height: 100%;
+    }
+
+    .chat-panel {
+        display: none;
+
+        height: 100%;
+    }
+
+    .messages-page.chat-open .conversation-panel {
+        display: none;
+    }
+
+    .messages-page.chat-open .chat-panel {
+        display: flex;
+    }
+
+    .back-btn {
+        display: block;
+    }
+
+    .conversation-list {
+        max-height: none;
+        height: calc(100vh - 190px);
+    }
+
+    .chat-body {
+        padding: 20px 15px;
+    }
+
+    .chat-message {
+        max-width: 82%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 390px) {
+
+    .messages-page {
+        padding: 6px;
+    }
+
+    .conversation-header {
+        padding: 18px 15px;
+    }
+
+    .conversation-header h1 {
+        font-size: 20px;
+    }
+
+    .message-avatar {
+        width: 43px;
+        height: 43px;
+    }
+
+    .conversation {
+        padding: 13px 10px;
+    }
+
+    .message-input-area {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .input-tool {
+        display: none;
+    }
+
+}

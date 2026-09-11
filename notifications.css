@@ -1,0 +1,505 @@
+/* =========================================
+   ANIMEHUB NOTIFICATIONS
+========================================= */
+
+.notifications-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: minmax(500px, 760px) 300px;
+    gap: 20px;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.notifications-container {
+    background: #111c31;
+    border: 1px solid #293958;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 22px;
+
+    border-bottom: 1px solid #263653;
+}
+
+.notifications-header h1 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.notifications-header p {
+    color: #7f8ba7;
+    font-size: 13px;
+}
+
+#mark-all-read {
+    border: none;
+    background: transparent;
+
+    color: #7185ff;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABS
+========================================= */
+
+.notification-tabs {
+    display: flex;
+    gap: 25px;
+
+    padding: 0 22px;
+
+    border-bottom: 1px solid #263653;
+}
+
+.notification-tabs button {
+    padding: 15px 2px;
+
+    border: none;
+    border-bottom: 2px solid transparent;
+
+    background: transparent;
+
+    color: #7e8ba7;
+
+    cursor: pointer;
+}
+
+.notification-tabs button.active {
+    color: white;
+
+    border-bottom-color: #7055ff;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.notification-section {
+    padding: 20px 22px;
+}
+
+.notification-section h3 {
+    color: #8996b1;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   NOTIFICATION
+========================================= */
+
+.notification {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 15px 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: background 0.2s;
+}
+
+.notification:hover {
+    background: #17243b;
+}
+
+.notification.unread {
+    background: #151f36;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.notification-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 16px;
+}
+
+.notification-icon.view {
+    background: #283c67;
+}
+
+.notification-icon.follow {
+    background: #243d68;
+}
+
+.notification-icon.comment {
+    background: #49376e;
+}
+
+.notification-icon.like {
+    background: #532d4a;
+}
+
+.notification-icon.share {
+    background: #293f58;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.notification-avatar {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.notification-avatar.pink {
+    background: linear-gradient(135deg, #ff6696, #d7439f);
+}
+
+.notification-avatar.blue {
+    background: linear-gradient(135deg, #4269e8, #7549db);
+}
+
+.notification-avatar.purple {
+    background: linear-gradient(135deg, #714eff, #a34dff);
+}
+
+.notification-avatar.green {
+    background: linear-gradient(135deg, #3eaa68, #9ac83d);
+}
+
+.notification-avatar.orange {
+    background: linear-gradient(135deg, #ef8b35, #e84c4c);
+}
+
+.notification-avatar.red {
+    background: linear-gradient(135deg, #e84f5b, #8f3b8e);
+}
+
+.notification-avatar.yellow {
+    background: linear-gradient(135deg, #f2b63c, #dd7540);
+}
+
+.notification-avatar.cyan {
+    background: linear-gradient(135deg, #36a7c4, #5267e8);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.notification-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-content p {
+    color: #e7ebf8;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.notification-content strong {
+    color: white;
+}
+
+.notification-content span {
+    display: block;
+
+    color: #8b97b0;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notification-content small {
+    display: block;
+
+    color: #65728c;
+
+    font-size: 11px;
+
+    margin-top: 4px;
+}
+
+
+/* =========================================
+   UNREAD DOT
+========================================= */
+
+.notification-dot {
+    width: 8px;
+    height: 8px;
+
+    background: #7355ff;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.notification-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notification-side-card {
+    background: #111c31;
+
+    border: 1px solid #293958;
+
+    border-radius: 14px;
+
+    padding: 20px;
+}
+
+.notification-side-card h3 {
+    font-size: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   ACTIVITY
+========================================= */
+
+.activity-stat {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #263653;
+}
+
+.activity-stat:last-child {
+    border-bottom: none;
+}
+
+.activity-stat strong {
+    color: #7381ff;
+}
+
+.activity-stat span {
+    color: #8995ae;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   SETTINGS
+========================================= */
+
+.notification-side-card label {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    color: #aeb8cf;
+
+    font-size: 13px;
+}
+
+.notification-side-card input {
+    accent-color: #7055ff;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.no-notifications {
+    display: none;
+
+    text-align: center;
+
+    padding: 70px 20px;
+
+    color: #8290aa;
+}
+
+.no-notifications div {
+    font-size: 35px;
+
+    margin-bottom: 12px;
+}
+
+.no-notifications h3 {
+    color: white;
+
+    margin-bottom: 6px;
+}
+
+.no-notifications p {
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .notifications-page {
+        grid-template-columns: 1fr;
+
+        max-width: 760px;
+    }
+
+    .notification-sidebar {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .notifications-page {
+        padding: 10px;
+    }
+
+    .notifications-container {
+        border-radius: 10px;
+    }
+
+    .notifications-header {
+        padding: 18px 15px;
+    }
+
+    .notifications-header h1 {
+        font-size: 20px;
+    }
+
+    .notifications-header p {
+        font-size: 11px;
+    }
+
+    #mark-all-read {
+        font-size: 11px;
+    }
+
+    .notification-tabs {
+        padding: 0 15px;
+
+        gap: 20px;
+    }
+
+    .notification-section {
+        padding: 16px 10px;
+    }
+
+    .notification {
+        padding: 13px 8px;
+
+        gap: 9px;
+    }
+
+    .notification-icon {
+        width: 32px;
+        height: 32px;
+
+        font-size: 13px;
+    }
+
+    .notification-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .notification-content p {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    .notification-icon {
+        display: none;
+    }
+
+    .notification-avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .notification-content p {
+        font-size: 12px;
+    }
+
+}

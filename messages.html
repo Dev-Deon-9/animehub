@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Messages - AnimeHub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="messages.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>Anime<span>Hub</span></h2>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search anime, users, posts..."
+            >
+        </div>
+
+        <div class="top-nav">
+
+            <a href="index.html">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Groups</a>
+
+            <a href="messages.html" class="active">
+                Messages
+            </a>
+
+            <a href="#">Notifications</a>
+
+        </div>
+
+        <div class="nav-profile">
+            <div class="small-avatar">G</div>
+        </div>
+
+    </nav>
+
+
+    <!-- ================================
+         MESSAGES PAGE
+    ================================= -->
+
+    <main class="messages-page">
+
+
+        <!-- ============================
+             CONVERSATION LIST
+        ============================= -->
+
+        <section class="conversation-panel">
+
+            <div class="conversation-header">
+
+                <div>
+                    <h1>Messages</h1>
+                    <span>Your conversations</span>
+                </div>
+
+                <button class="new-message-btn">
+                    +
+                </button>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="message-search">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="message-search"
+                    placeholder="Search messages..."
+                >
+
+            </div>
+
+
+            <!-- PEOPLE -->
+            <div class="conversation-list" id="conversation-list">
+
+
+                <!-- SARAH -->
+                <button
+                    class="conversation"
+                    data-user="Sarah"
+                    data-username="@sarah_xx"
+                    data-avatar="S"
+                    data-color="pink"
+                >
+
+                    <div class="message-avatar pink">
+                        S
+                    </div>
+
+                    <div class="conversation-info">
+
+                        <div class="conversation-name">
+                            <strong>Sarah</strong>
+                            <span>2m</span>
+                        </div>
+
+                        <p>
+                            Did you watch the new episode? 🔥
+                        </p>
+
+                    </div>
+
+                    <span class="unread">2</span>
+
+                </button>
+
+
+                <!-- MIKE -->
+                <button
+                    class="conversation"
+                    data-user="Mike"
+                    data-username="@mike_uchiha"
+                    data-avatar="M"
+                    data-color="blue"
+                >
+
+                    <div class="message-avatar blue">
+                        M
+                    </div>
+
+                    <div class="conversation-info">
+
+                        <div class="conversation-name">
+                            <strong>Mike</strong>
+                            <span>15m</span>
+                        </div>
+
+                        <p>
+                            Bro that ending was crazy 😂
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <!-- ANIMELOVER -->
+                <button
+                    class="conversation"
+                    data-user="AnimeLover"
+                    data-username="@anime_lover"
+                    data-avatar="A"
+                    data-color="purple"
+                >
+
+                    <div class="message-avatar purple">
+                        A
+                    </div>
+
+                    <div class="conversation-info">
+
+                        <div class="conversation-name">
+                            <strong>AnimeLover</strong>
+                            <span>1h</span>
+                        </div>
+
+                        <p>
+                            One Piece or Naruto?
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <!-- ZOROFAN -->
+                <button
+                    class="conversation"
+                    data-user="ZoroFan"
+                    data-username="@zoro4life"
+                    data-avatar="Z"
+                    data-color="green"
+                >
+
+                    <div class="message-avatar green">
+                        Z
+                    </div>
+
+                    <div class="conversation-info">
+
+                        <div class="conversation-name">
+                            <strong>ZoroFan</strong>
+                            <span>3h</span>
+                        </div>
+
+                        <p>
+                            Zoro is definitely the GOAT.
+                        </p>
+
+                    </div>
+
+                </button>
+
+
+                <!-- LUFFYGOAT -->
+                <button
+                    class="conversation"
+                    data-user="LuffyGoat"
+                    data-username="@luffy_is_king"
+                    data-avatar="L"
+                    data-color="orange"
+                >
+
+                    <div class="message-avatar orange">
+                        L
+                    </div>
+
+                    <div class="conversation-info">
+
+                        <div class="conversation-name">
+                            <strong>LuffyGoat</strong>
+                            <span>Yesterday</span>
+                        </div>
+
+                        <p>
+                            Have you read the manga?
+                        </p>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================
+             CHAT PANEL
+        ============================= -->
+
+        <section class="chat-panel" id="chat-panel">
+
+
+            <!-- CHAT HEADER -->
+
+            <header class="chat-header">
+
+                <button
+                    class="back-btn"
+                    id="back-btn"
+                    aria-label="Back to messages"
+                >
+                    ←
+                </button>
+
+                <div class="chat-user">
+
+                    <div
+                        class="message-avatar purple"
+                        id="chat-avatar"
+                    >
+                        S
+                    </div>
+
+                    <div>
+
+                        <strong id="chat-name">
+                            Sarah
+                        </strong>
+
+                        <span id="chat-username">
+                            @sarah_xx
+                        </span>
+
+                        <small>
+                            ● Online
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <button class="chat-more">
+                    •••
+                </button>
+
+            </header>
+
+
+            <!-- CHAT BODY -->
+
+            <div class="chat-body" id="chat-body">
+
+
+                <div class="message-date">
+                    Today
+                </div>
+
+
+                <!-- RECEIVED -->
+                <div class="chat-message received">
+
+                    <div class="message-bubble">
+                        Hey Gideon! 👋
+                    </div>
+
+                    <span>
+                        10:31 AM
+                    </span>
+
+                </div>
+
+
+                <!-- SENT -->
+                <div class="chat-message sent">
+
+                    <div class="message-bubble">
+                        Yo Sarah! What's up?
+                    </div>
+
+                    <span>
+                        10:32 AM
+                    </span>
+
+                </div>
+
+
+                <!-- RECEIVED -->
+                <div class="chat-message received">
+
+                    <div class="message-bubble">
+                        Did you watch the new One Piece episode?
+                    </div>
+
+                    <span>
+                        10:33 AM
+                    </span>
+
+                </div>
+
+
+                <!-- SENT -->
+                <div class="chat-message sent">
+
+                    <div class="message-bubble">
+                        Yeah! 🔥 That episode was insane.
+                    </div>
+
+                    <span>
+                        10:34 AM
+                    </span>
+
+                </div>
+
+
+                <!-- RECEIVED -->
+                <div class="chat-message received">
+
+                    <div class="message-bubble">
+                        I KNOW 😭 The animation was crazy!
+                    </div>
+
+                    <span>
+                        10:35 AM
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- MESSAGE INPUT -->
+
+            <form
+                class="message-input-area"
+                id="message-form"
+            >
+
+                <button
+                    type="button"
+                    class="input-tool"
+                >
+                    😊
+                </button>
+
+                <input
+                    type="text"
+                    id="message-input"
+                    placeholder="Type a message..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    class="input-tool"
+                >
+                    📎
+                </button>
+
+                <button
+                    type="submit"
+                    class="send-btn"
+                >
+                    ➤
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="messages.js"></script>
+
+</body>
+</html>

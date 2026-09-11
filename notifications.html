@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications - AnimeHub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>Anime<span>Hub</span></h2>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search anime, users, posts..."
+            >
+        </div>
+
+        <div class="top-nav">
+
+            <a href="index.html">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Groups</a>
+            <a href="messages.html">Messages</a>
+
+            <a href="notifications.html" class="active">
+                Notifications
+            </a>
+
+        </div>
+
+        <div class="nav-profile">
+            <div class="small-avatar">G</div>
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN -->
+    <main class="notifications-page">
+
+        <section class="notifications-container">
+
+            <!-- HEADER -->
+            <div class="notifications-header">
+
+                <div>
+                    <h1>Notifications</h1>
+                    <p>Stay updated with your AnimeHub activity</p>
+                </div>
+
+                <button id="mark-all-read">
+                    Mark all as read
+                </button>
+
+            </div>
+
+
+            <!-- FILTERS -->
+            <div class="notification-tabs">
+
+                <button class="active" data-filter="all">
+                    All
+                </button>
+
+                <button data-filter="unread">
+                    Unread
+                </button>
+
+                <button data-filter="mentions">
+                    Mentions
+                </button>
+
+            </div>
+
+
+            <!-- TODAY -->
+            <div class="notification-section">
+
+                <h3>Today</h3>
+
+
+                <!-- PROFILE VIEW -->
+                <button
+                    class="notification unread"
+                    data-type="view"
+                    data-target="profile"
+                >
+
+                    <div class="notification-icon view">
+                        👁
+                    </div>
+
+                    <div class="notification-avatar pink">
+                        S
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>Sarah</strong>
+                            viewed your profile.
+                        </p>
+
+                        <span>5 minutes ago</span>
+
+                    </div>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- FOLLOW -->
+                <button
+                    class="notification unread"
+                    data-type="follow"
+                    data-target="profile"
+                >
+
+                    <div class="notification-icon follow">
+                        👤
+                    </div>
+
+                    <div class="notification-avatar blue">
+                        M
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>Mike</strong>
+                            started following you.
+                        </p>
+
+                        <span>18 minutes ago</span>
+
+                    </div>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- COMMENT -->
+                <button
+                    class="notification unread"
+                    data-type="comment"
+                    data-target="post"
+                >
+
+                    <div class="notification-icon comment">
+                        💬
+                    </div>
+
+                    <div class="notification-avatar purple">
+                        A
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>AnimeLover</strong>
+                            commented on your post.
+                        </p>
+
+                        <span>
+                            "That episode was 🔥"
+                        </span>
+
+                        <small>32 minutes ago</small>
+
+                    </div>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- LIKE -->
+                <button
+                    class="notification"
+                    data-type="like"
+                    data-target="post"
+                >
+
+                    <div class="notification-icon like">
+                        ❤️
+                    </div>
+
+                    <div class="notification-avatar green">
+                        Z
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>ZoroFan</strong>
+                            liked your post.
+                        </p>
+
+                        <span>1 hour ago</span>
+
+                    </div>
+
+                </button>
+
+
+                <!-- SHARE -->
+                <button
+                    class="notification"
+                    data-type="share"
+                    data-target="post"
+                >
+
+                    <div class="notification-icon share">
+                        ↗
+                    </div>
+
+                    <div class="notification-avatar orange">
+                        L
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>LuffyGoat</strong>
+                            shared your post.
+                        </p>
+
+                        <span>2 hours ago</span>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- YESTERDAY -->
+            <div class="notification-section">
+
+                <h3>Yesterday</h3>
+
+
+                <!-- FOLLOW -->
+                <button
+                    class="notification"
+                    data-type="follow"
+                    data-target="profile"
+                >
+
+                    <div class="notification-icon follow">
+                        👤
+                    </div>
+
+                    <div class="notification-avatar red">
+                        J
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>JujutsuFan</strong>
+                            started following you.
+                        </p>
+
+                        <span>Yesterday</span>
+
+                    </div>
+
+                </button>
+
+
+                <!-- COMMENT -->
+                <button
+                    class="notification"
+                    data-type="comment"
+                    data-target="post"
+                >
+
+                    <div class="notification-icon comment">
+                        💬
+                    </div>
+
+                    <div class="notification-avatar yellow">
+                        N
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>NamiChan</strong>
+                            commented on your post.
+                        </p>
+
+                        <span>
+                            "One Piece is peak!"
+                        </span>
+
+                        <small>Yesterday</small>
+
+                    </div>
+
+                </button>
+
+
+                <!-- VIEW -->
+                <button
+                    class="notification"
+                    data-type="view"
+                    data-target="profile"
+                >
+
+                    <div class="notification-icon view">
+                        👁
+                    </div>
+
+                    <div class="notification-avatar cyan">
+                        K
+                    </div>
+
+                    <div class="notification-content">
+
+                        <p>
+                            <strong>Kai</strong>
+                            viewed your profile.
+                        </p>
+
+                        <span>Yesterday</span>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- EMPTY STATE -->
+            <div
+                class="no-notifications"
+                id="no-notifications"
+            >
+
+                <div>🔔</div>
+
+                <h3>No notifications</h3>
+
+                <p>
+                    You're all caught up!
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <aside class="notification-sidebar">
+
+            <div class="notification-side-card">
+
+                <h3>Activity Summary</h3>
+
+                <div class="activity-stat">
+                    <strong>12</strong>
+                    <span>Profile views</span>
+                </div>
+
+                <div class="activity-stat">
+                    <strong>8</strong>
+                    <span>New followers</span>
+                </div>
+
+                <div class="activity-stat">
+                    <strong>24</strong>
+                    <span>Post interactions</span>
+                </div>
+
+            </div>
+
+
+            <div class="notification-side-card">
+
+                <h3>Notification Settings</h3>
+
+                <label>
+                    <span>New followers</span>
+                    <input type="checkbox" checked>
+                </label>
+
+                <label>
+                    <span>Comments</span>
+                    <input type="checkbox" checked>
+                </label>
+
+                <label>
+                    <span>Likes</span>
+                    <input type="checkbox" checked>
+                </label>
+
+                <label>
+                    <span>Profile views</span>
+                    <input type="checkbox" checked>
+                </label>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <script src="notifications.js"></script>
+
+</body>
+</html>

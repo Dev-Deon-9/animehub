@@ -1,0 +1,608 @@
+/* =========================================
+   ANIMEHUB COMMENT PAGE
+========================================= */
+
+.comment-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: minmax(500px, 760px) 300px;
+    gap: 20px;
+}
+
+
+/* =========================================
+   POST
+========================================= */
+
+.comment-post,
+.comments-card,
+.right-card {
+    background: #111c31;
+    border: 1px solid #293958;
+    border-radius: 14px;
+}
+
+
+.comment-post {
+    overflow: hidden;
+}
+
+
+.post-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.post-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.post-avatar,
+.comment-avatar,
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #6c4cff, #ec3fa9);
+    color: white;
+    font-weight: bold;
+}
+
+
+.post-user h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+
+.post-user span,
+.comment-meta span,
+.suggested-user span,
+.group-item span,
+.trend-item span {
+    color: #8491ad;
+    font-size: 13px;
+}
+
+
+.more-btn {
+    background: transparent;
+    border: none;
+    color: #aeb9d3;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.post-content {
+    padding: 0 20px;
+}
+
+
+.post-content p {
+    color: #e9edfa;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+
+.post-image {
+    width: 100%;
+    height: 330px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.anime-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at 50% 30%, #376ac8, #101b35 65%);
+
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 16px 20px;
+    border-top: 1px solid #263653;
+    margin-top: 18px;
+}
+
+
+.post-actions button {
+    background: none;
+    border: none;
+    color: #aeb9d3;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.post-actions .like-btn {
+    color: #ff477e;
+}
+
+
+/* =========================================
+   COMMENTS CARD
+========================================= */
+
+.comments-card {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+.comments-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #263653;
+}
+
+
+.comments-header h2 {
+    font-size: 18px;
+}
+
+
+.comments-header h2 span {
+    color: #8491ad;
+    font-weight: normal;
+}
+
+
+.comment-sort {
+    display: flex;
+    gap: 18px;
+}
+
+
+.comment-sort button {
+    border: none;
+    background: transparent;
+    color: #8491ad;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+
+.comment-sort button.active {
+    color: white;
+    border-bottom: 2px solid #7155ff;
+}
+
+
+/* =========================================
+   COMMENT
+========================================= */
+
+.comments-list {
+    padding: 20px;
+}
+
+
+.comment {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+
+.comment.reply {
+    margin-left: 55px;
+    position: relative;
+}
+
+
+.comment.reply::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: -12px;
+    width: 20px;
+    height: 45px;
+    border-left: 1px solid #405070;
+    border-bottom: 1px solid #405070;
+    border-radius: 0 0 0 8px;
+}
+
+
+.comment-body {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.comment-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+
+.comment-meta strong {
+    font-size: 14px;
+}
+
+
+.comment-body p {
+    color: #dce3f5;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.comment-actions button {
+    background: none;
+    border: none;
+    color: #8795b3;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.comment-actions button:hover {
+    color: white;
+}
+
+
+.comment-actions .liked {
+    color: #ff477e;
+}
+
+
+/* =========================================
+   AVATARS
+========================================= */
+
+.avatar-sarah {
+    background: linear-gradient(135deg, #ff719b, #d93f9f);
+}
+
+
+.avatar-mike {
+    background: linear-gradient(135deg, #4569e8, #7048d8);
+}
+
+
+.avatar-zoro {
+    background: linear-gradient(135deg, #43a85b, #9bc43b);
+}
+
+
+.avatar-luffy {
+    background: linear-gradient(135deg, #f08b36, #e94e4e);
+}
+
+
+/* =========================================
+   WRITE COMMENT
+========================================= */
+
+.write-comment {
+    display: flex;
+    gap: 12px;
+    padding: 18px 20px;
+    border-top: 1px solid #263653;
+}
+
+
+.comment-input-area {
+    flex: 1;
+}
+
+
+.comment-input-area input {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    background: #18233a;
+    border: 1px solid #304160;
+    border-radius: 9px;
+    outline: none;
+    color: white;
+}
+
+
+.comment-input-area input:focus {
+    border-color: #6955ff;
+}
+
+
+.comment-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.tools-left {
+    display: flex;
+    gap: 12px;
+}
+
+
+.tools-left button {
+    border: none;
+    background: transparent;
+    color: #8e9bb7;
+    cursor: pointer;
+}
+
+
+.comment-submit {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 17px;
+    background: linear-gradient(135deg, #6855ff, #8d55ff);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   RIGHT SIDEBAR
+========================================= */
+
+.comment-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.right-card {
+    padding: 18px;
+}
+
+
+.right-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+.right-card-header h3 {
+    font-size: 15px;
+}
+
+
+.right-card-header a {
+    color: #7185ff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+.trend-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 11px 0;
+}
+
+
+.trend-number {
+    color: #6e7cff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.trend-item div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.suggested-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+
+.suggested-user .user-avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
+}
+
+
+.suggested-user > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2px;
+}
+
+
+.suggested-user button {
+    border: none;
+    background: #6254ed;
+    color: white;
+    border-radius: 7px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+.group-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #263653;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.group-item:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .comment-page {
+        grid-template-columns: 1fr;
+        max-width: 760px;
+    }
+
+    .comment-sidebar {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .comment-page {
+        display: block;
+        padding: 10px;
+    }
+
+
+    .comment-post,
+    .comments-card {
+        border-radius: 10px;
+    }
+
+
+    .post-header {
+        padding: 15px;
+    }
+
+
+    .post-content {
+        padding: 0 15px;
+    }
+
+
+    .post-content p {
+        font-size: 14px;
+    }
+
+
+    .post-image {
+        height: 230px;
+    }
+
+
+    .post-actions {
+        padding: 13px 15px;
+        gap: 20px;
+    }
+
+
+    .comments-header {
+        padding: 15px;
+    }
+
+
+    .comments-list {
+        padding: 15px;
+    }
+
+
+    .comment.reply {
+        margin-left: 35px;
+    }
+
+
+    .write-comment {
+        padding: 14px;
+    }
+
+
+    .comment-tools {
+        gap: 10px;
+    }
+
+
+    .comment-submit {
+        padding: 9px 12px;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    .comment-meta {
+        flex-wrap: wrap;
+    }
+
+
+    .comment-actions {
+        gap: 14px;
+    }
+
+
+    .post-actions {
+        gap: 13px;
+    }
+
+
+    .post-actions button {
+        font-size: 12px;
+    }
+
+
+    .tools-left {
+        gap: 7px;
+    }
+
+
+    .tools-left button {
+        font-size: 12px;
+    }
+
+}
