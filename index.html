@@ -55,9 +55,9 @@
 
         <div class="nav-right">
 
-            <a href="#" class="notification">
+            <a href="notifications.html" class="notification">
                 🔔
-                <small>3</small>
+                <small id="notification-count">0</small>
             </a>
 
             <div class="nav-profile">
@@ -151,11 +151,9 @@
                 </a>
 
                 <a href="notifications.html">
-                    <span>🔔</span>
-                    Notifications
-
-                    <small>3</small>
-
+                   <span>🔔</span>
+                   notification
+                <small id="notification-count">0</small>
                 </a>
 
                 <a href="#">
@@ -328,38 +326,48 @@
                     <div class="post-avatar">
                         G
                     </div>
-
-                    <input
-                        type="text"
-                        placeholder="What's on your mind, Gideon?"
-                    >
-
+                <input
+                  type="text"
+                  id="post-input"
+                  placeholder="What's on your mind, Gideon?"
+                  >
                 </div>
 
+                 <div class="post-options">
 
-                <div class="post-options">
+    <button id="media-button" type="button">
+    📷
+    <span>Media</span>
+</button>
 
-                    <button>
-                        📷
-                        <span>Photo</span>
-                    </button>
+<input
+    type="file"
+    id="media-input"
+    accept="image/*,video/*"
+    hidden
+>
+<div id="media-preview" class="media-preview"></div>
 
-                    <button>
-                        🎌
-                        <span>Anime</span>
-                    </button>
+    <button>
+        🎌
+        <span>Anime</span>
+    </button>
 
-                    <button>
-                        📊
-                        <span>Poll</span>
-                    </button>
+    <button>
+        📊
+        <span>Poll</span>
+    </button>
 
-                </div>
+    <button id="post-submit" class="post-submit">
+        Post
+    </button>
+
+</div>
 
             </div>
 
 
-
+            <div id="posts-container"></div>
             <!-- ================= POST ONE ================= -->
 
             <article class="post">
@@ -949,6 +957,7 @@
 
     </nav>
 
+    <script src="main.js"></script>
 
 </body>
 

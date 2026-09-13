@@ -606,3 +606,25 @@
     }
 
 }
+/* =========================
+   COMMENT POST MEDIA
+========================= */
+
+.comment-post-image-container {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #050b1c;
+}
+
+.comment-post-image-container img,
+.comment-post-image-container video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 14px;
+}

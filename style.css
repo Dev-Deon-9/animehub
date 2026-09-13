@@ -638,11 +638,10 @@ input {
 .create-post-top input::placeholder {
     color: #9ba6bc;
 }
-
 .post-options {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     margin-top: 15px;
 
@@ -663,6 +662,24 @@ input {
     font-size: 12px;
 
     cursor: pointer;
+}
+
+.post-options .post-submit {
+    color: #ffffff;
+
+    font-weight: 700;
+
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.post-options .post-submit:hover {
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.35);
 }
 
 
@@ -1454,4 +1471,189 @@ input {
         gap: 12px;
     }
 
+}
+
+
+
+
+
+
+/* =========================
+   POST MENU
+========================= */
+
+.post-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================
+   THREE DOT BUTTON
+========================= */
+
+.post-menu-container {
+    position: relative;
+    margin-left: auto;
+}
+
+.post-menu-button {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    color: #8f9bb3;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.post-menu-button:hover {
+    background: rgba(124, 58, 237, 0.12);
+
+    border-color: rgba(124, 58, 237, 0.25);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 0 12px rgba(124, 58, 237, 0.15);
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.post-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 42px;
+    right: 0;
+
+    width: 150px;
+
+    padding: 6px;
+
+    background: #0d1528;
+
+    border: 1px solid #293650;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.45),
+        0 0 18px rgba(124, 58, 237, 0.08);
+
+    z-index: 100;
+}
+
+.post-menu.show {
+    display: block;
+}
+
+
+/* =========================
+   MENU BUTTONS
+========================= */
+
+.post-menu button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 10px 11px;
+
+    background: transparent;
+
+    border: none;
+    border-radius: 8px;
+
+    color: #c7cfdd;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.post-menu button:hover {
+    background: #18233b;
+
+    color: #ffffff;
+
+    transform: translateX(2px);
+}
+
+
+/* =========================
+   EDIT
+========================= */
+
+.post-menu .edit-post-button:hover {
+    background: rgba(124, 58, 237, 0.14);
+
+    color: #b794ff;
+}
+
+
+/* =========================
+   DELETE
+========================= */
+
+.post-menu .delete-post-button:hover {
+    background: rgba(239, 68, 68, 0.12);
+
+    color: #ff7070;
+}
+
+
+/* ================= POST MEDIA ================= */
+
+.post-media {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #050b1c;
+}
+
+.post-media img,
+.post-media video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 14px;
 }
